@@ -48,7 +48,7 @@ nav li a:hover {
 /* hero */
 h1 {
     font-family: 'Pacifico', cursive;
-    line-height: 1.5 !important;
+    line-height:1.5 !important;
 }
 
 
@@ -56,66 +56,141 @@ h1 {
 /* For slider */
 
 
-.partner{
-	align-items: center;
-	background: #E3E3E3;
-	display: flex;
-	height: 100vh;
-	justify-content: center;
+/* app.css */
+
+
+  
+  .slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+  }
+  
+  .slider::before,
+  .slider::after {
+    background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+  
+  .slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+  
+  .slider::before {
+    left: 0;
+    top: 0;
+  }
+  
+  .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+  
+  @keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-250px * 7)); }
+  }
+  
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
+  
+
+
+  /* About section */
+
+  .heroImg {
+    /* border: 1px solid blue; */
+    /* padding: 10px; */
+    width: 40%;
+    display: flex;
+    /* height: 70%; */
+    margin-top: 35px;
+    margin-left: 20px;
 }
 
-@mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+.heroImg img {
+    width: 90%;
+    /* margin: 0 auto; */
+    margin-left: 120px;
+    /* border-radius: 50px; */
 }
 
-$animationSpeed: 40s;
+.rotateEarth {
+    animation-name: animated-it;
+    animation-duration: 40s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
 
-// Animation
-@keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+}
+
+.rotateEarth {
+    animation-name: earth-rotate;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
 }
 
 
-// Styling
-.slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+.heroCard {
+    /* border: 1px solid cyan; */
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 15px;
+    padding: 5px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    overflow: hidden;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
 }
+
+.heroDescribe h1 {
+    font-size: 65px;
+    line-height: 115%;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+    margin-top: -90px;
+}
+
+.heroDescribe h2 {
+  font-family: "Arial", sans-serif; /* Change the font to a different one */
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 12%, rgba(86, 69, 189, 1) 70%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 30px;
+  margin-bottom: 5px;
+  margin-top: 55px;
+  font-weight: 800;
+}
+
+@keyframes earth-rotate {
+    50% {
+        transform: rotate(180deg);
+    }
+
+    100% {
+        transform: rotate(-180deg);
+    }
+}
+
+
+/* Forms styling */
+.FormContainer {
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: grid;
+    place-items: center;
+  }
