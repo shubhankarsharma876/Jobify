@@ -188,9 +188,101 @@ h1 {
 
 
 /* Forms styling */
+/* Base styles */
 .FormContainer {
-    width: 100%;
-    height: calc(100vh - 80px);
-    display: grid;
-    place-items: center;
+  width: 100%;
+  overflow-y: auto;
+  display: grid;
+  place-items: center;
+  background-color: #1e293b;
+}
+
+.FormInner {
+  width: 80%; /* Adjust the width for desktop */
+  max-width: 100vh; /* Set a maximum width for desktop */
+  height: auto;
+  padding: 20px;
+  background-color: #bcbdff;
+  border-radius: 12px;
+  color: rgb(24, 23, 23);
+  display: grid;
+  grid-template-columns: 1fr; /* Single column layout by default */
+  align-items: center;
+  justify-items: center;
+}
+
+.FormContainer h1 {
+  text-align: center;
+}
+
+.FormContainer label {
+  font-size: 20px;
+}
+
+.FormContainer .inputGp {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGp input,
+.inputGp textarea {
+  font-size: 16px;
+  border: none;
+  border-radius: 2px;
+  padding: 5px;
+  max-width: 100%;
+  width: 100%;
+}
+
+.inputGp input {
+  height: 40px;
+}
+
+.inputGp textarea {
+  height: 150px;
+}
+
+.FormInner button {
+  margin-top: 20px;
+  height: 40px;
+  border: solid;
+  width: 30%;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+input,
+textarea {
+  margin-top: 5px;
+}
+
+/* Responsive styles for desktop */
+@media screen and (min-width: 769px) {
+  .FormInner {
+    grid-template-columns: 1fr 1fr; /* Two-column layout for desktop */
   }
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .FormInner {
+    width: 80%;
+    
+  }
+  
+  .FormInner button {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .FormInner {
+    width: 90%;
+  }
+  
+  .FormInner button {
+    width: 70%;
+  }
+}

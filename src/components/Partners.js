@@ -2,8 +2,8 @@ import React from 'react'
 
 function Partners() {
   return (
-    <section className="bg-primary px-5 py-16" id="partner">
-		<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] mx-auto border-indigo-600 pb-2 text-white ">
+    <section className="bg-primary px-5 py-16 " id="partner">
+		<h2 className="text-4xl font-bold mb-5 border-b-[5px] w-[220px] mx-auto border-indigo-600 pb-2 text-white  ">
           Our Partners
         </h2>
     <div className="slider">
