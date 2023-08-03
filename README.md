@@ -6,6 +6,8 @@ The front end is made using Reactjs, HTML, and CSS. It is just a front end and a
 ***
 ## Screenshots
 
+***
+
 ### Desktop Site
 <img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/About.png"/>
 <br>
@@ -15,3 +17,10 @@ The front end is made using Reactjs, HTML, and CSS. It is just a front end and a
 <br>
 <img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/contact.png"/>
 
+***
+### Mobile Responsive Site
+<img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m1.png"/>
+<br>
+<img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m2.png"/>
+<br>
+<img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m3.png"/>
