@@ -17,7 +17,10 @@ The front end is made using Reactjs, HTML, and CSS. It is just a front end and a
 
 ***
 ### Mobile Responsive Site
-<img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m1.png"/>
+<div style="text-align:center">
+    <img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m1.png"/>
+</div>
+
 <br>
 <img align="center" src="https://raw.githubusercontent.com/shubhankarsharma876/Jobify/main/screenshots/m2.png"/>
 <br>
